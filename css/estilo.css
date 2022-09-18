@@ -346,3 +346,16 @@ footer ul li a:hover{
     font-size: 1.2rem;
     margin-top: 2rem;
 }
+
+
+
+/*----------------------------*/
+iframe{
+    margin-top: 3rem;
+}
+.tour h3{
+    color: #fff;
+    line-height: 1;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
