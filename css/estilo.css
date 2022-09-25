@@ -16,9 +16,11 @@
     --color-white: #fff;
     --color-light: rgba(255,255,255,0.7);
     --color-black: #000;
-    --color-bg: #1f2641;
+    --color-bg: #252850;
     --color-bg1: #2e3267;
     --color-bg2: #424890;
+    --color-light: #fff;
+    --color-dark: #1e2040;
 
     --container-width-lg: 80%;
     --container-width-md: 90%;
@@ -31,7 +33,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.7;
     color: var(--color-white);
-    background: var(--color-bg);
+    background: var(--color-dark);
 }
 .container{
     width: var(--container-width-lg);
@@ -91,7 +93,7 @@ img{
 /*----------------------navbar----------------*/
 
 nav{
-    background-color: rgba(255, 255, 255, 0.365);
+    background-color: var(--color-bg);
     width: 100vw;
     height: 5rem;
     position: fixed;
@@ -117,9 +119,10 @@ nav button{
 .nav_menu{
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
     
 }
+
 .nav_menu a{
     font-size: 0.9rem;
     transition: var(--transition);
@@ -184,10 +187,20 @@ header{
     gap: 1.2rem;
 }
 .category{
-    background: var(--color-bg2);
+    /*background: var(--color-bg2);*/
+    /*background: url(../imagenes/niña.jpeg);
+    background-size: cover;*/
     padding: 2rem;
     border-radius: 2rem;
     transition: var(--transition);
+}
+.primaria{
+    background: url(../imagenes/niña.jpeg);
+    background-size: cover;
+}
+.secundaria{
+    background: url(../imagenes/bgsecundaria.jpeg);
+    background-size: cover;
 }
 .category:hover{
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
