@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<!--testimonial-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 <!---->
     <link rel="stylesheet" href="css/whats.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -27,13 +27,21 @@
         <div class="container nav_container">
             <a href="index.html"><img src="./imagenes/logo_nazaret2.png" alt=""></a>
             <ul class="nav_menu">
-                <li><a href="admision.html">Sobre Nosotres</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-               
+                <li><a href="admision.html">Sobre Nosotres <i class="uil uil-angle-down"></i></a></li>
+                <li><a href="galeria.html">Admision</a></li>
+                <li class="expandable_li">
+                    <input type="checkbox" id="galeria_checkbox">
+                    <label for="galeria_checkbox" style="font-size: 0.9rem;">Galeria <i class="uil uil-angle-down"></i></label>
+                    <ul class="dropdown">
+                        <li><a href=""><i class="uil uil-rotate-360"></i>Tour virtual</a></li>
+                        <li><a href=""><i class="uil uil-user-nurse"></i>Uniformes</a></li>
+                        <li><a href=""><i class="uil uil-award"></i>Premios</a></li>
+                        <li><a href=""><i class="uil uil-instagram"></i>Instagram</a></li>
+                    </ul>
+                </li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="#" class="icon_user"><i class="uil uil-user"></i></a></li>
-                <li><a href="#" class="icon_user"><i class="uil uil-sun"></i></a></li>
             </ul>
+            
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
             <button id="close-menu-btn"><i class="uil uil-multiply"></i></i></button>
         </div>
@@ -63,7 +71,7 @@
             
             <div class="categories_left">
                 <h1>Niveles</h1>
-                <p>Este centro educativo dispone de 2 niviles</p>
+                <p>Este centro educativo dispone de 2 niveles</p>
                 <a href="#" class="btn">Gestion pedagogica</a>
             </div>
         
@@ -171,7 +179,7 @@
                     <small>estudiante</small>
                 </div>
                 <div class="testimonial_body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatum reprehenderit odit iste? Iste, amet. Maiores culpa sapiente ipsam quisquam consequatur nobis mollitia, iste dolore cum, sint necessitatibus atque dolorum.</p>
                 </div>
             </article>
 
@@ -184,7 +192,7 @@
                     <small>estudiante</small>
                 </div>
                 <div class="testimonial_body swiper-slide">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias numquam voluptatem eos saepe, illum repudiandae illo distinctio culpa ipsam excepturi eveniet placeat incidunt ipsa sunt dolores consequatur expedita. Suscipit, est.</p>
                 </div>
             </article>
 
@@ -197,7 +205,7 @@
                     <small>estudiante</small>
                 </div>
                 <div class="testimonial_body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, at et error quo maxime aspernatur labore maiores veniam consectetur? Suscipit ut deserunt asperiores nemo quibusdam. Ad nam praesentium dignissimos ab?.</p>
                 </div>
             </article>
 
@@ -210,10 +218,11 @@
                     <small>estudiante</small>
                 </div>
                 <div class="testimonial_body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus culpa accusantium eaque repudiandae nemo beatae magni dicta similique modi odio.</p>
                 </div>
             </article>
         </div>
+        <div class="swiper-pagination"></div>
     </section>
 
 
@@ -326,20 +335,29 @@
 
 
 
-
-    <script src="./java/js.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./java/js.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
+        //------------
+        breakpoints: {
+            600:{
+                slidesPerView: 3,
+            }
+        }
       });
     </script>
+
 </body>
 </html>
-139
+<!--139-->

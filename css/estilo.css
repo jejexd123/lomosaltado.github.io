@@ -93,6 +93,7 @@ img{
 /*----------------------navbar----------------*/
 
 nav{
+    display: flex;
     background-color: var(--color-bg);
     width: 100vw;
     height: 5rem;
@@ -101,6 +102,36 @@ nav{
     z-index: 10;
     
 }
+
+.dropdown{
+    height: min-content;
+    width: 200px;
+    background-color: var(--color-bg);
+    display: none;
+    flex-direction: column;
+    position: absolute;
+}
+.dropdown li{
+    height: 40px;
+    width: 100%;
+}
+.dropdown li a{
+    justify-content: flex-start;
+    padding-left: 5px;
+    width: calc(100% - 5px);
+}
+
+
+nav li:hover .dropdown{
+    display: flex;
+    color: #000;
+}
+nav input[type="checkbox"]{
+    display: none;
+}
+
+
+
 /*-cambiar color scrol-*/
 .window-scroll{
     background: #1f2641;
@@ -131,10 +162,14 @@ nav button{
     color: black;
 }
 
+
+     /*-----noche/dia---*/
+
+
 /*----------------------header----------------*/
 header{
     position: relative;
-    top: 5rem;
+    top: 1rem;
     overflow: hidden;
     height: 70vh;
     margin-bottom: 5rem;
@@ -331,7 +366,7 @@ header{
     width: 3rem;
     height: 3rem;
     position: absolute;
-    left: 50%;
+    left: 43%;
     top: -1.5rem;
     transform: rotate(45deg);
 }
@@ -409,6 +444,35 @@ iframe{
         cursor: pointer;
     }
 
+    nav button#close-menu-btn{
+        display: none;
+    }
+    .nav_menu{
+        position: fixed;
+        top: 5rem;
+        right: 5%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+    }
+    .nav_menu li{
+        width: 100%;
+        height: 5.8rem;
+    }
+    .nav_menu a{
+        background: var(--color-primary);
+        box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .nav_menu li a:hover{
+        background: var(--color-bg2);
+        color: var(--color-white);
+    }
     /*============*/
     header {
         /*height: 52vh;*/
@@ -480,7 +544,7 @@ iframe{
     .header_container{
         grid-template-columns: 1fr;
         text-align: center;
-        margin-top: 5rem;
+        margin-top: 8rem;
     }
 
     .header_left p{
