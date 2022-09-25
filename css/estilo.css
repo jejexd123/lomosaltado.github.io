@@ -411,7 +411,8 @@ iframe{
 
     /*============*/
     header {
-        height: 52vh;
+        /*height: 52vh;*/
+        height: auto;
         margin-bottom: 4rem;
     }
     .header_container{
