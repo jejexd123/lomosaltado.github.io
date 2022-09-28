@@ -157,14 +157,13 @@ nav button{
 .nav_menu a{
     font-size: 0.9rem;
     transition: var(--transition);
+    
 }
+
 .nav_menu a:hover{
-    color: black;
+    color: var(--color-white);
+    text-decoration: underline red 2px;
 }
-
-
-     /*-----noche/dia---*/
-
 
 /*----------------------header----------------*/
 header{
