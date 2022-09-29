@@ -130,6 +130,7 @@ nav {
 
 nav ul {
     float: right;
+    z-index: 20;
 }
 
 nav ul li {
@@ -139,7 +140,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: var(--color-white);
     font-size: 15px;
     padding: 7px 8px;
     border-radius: 3px;
@@ -148,7 +149,7 @@ nav ul li a {
 
 li a.active,
 li a:hover {
-    background: #1e1e92;
+    background: var(--color-bg2);
     transition: .5s;
 }
 
