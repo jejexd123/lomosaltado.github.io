@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 <!--testimonial-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 <!---->
@@ -25,26 +26,23 @@
 <body>
     <nav>
         <div class="container nav_container">
-            <a href="index.html"><img src="./imagenes/logo_nazaret2.png" alt=""></a>
-            <ul class="nav_menu">
-                <li><a href="admision.html">Sobre Nosotres <i class="uil uil-angle-down"></i></a></li>
-                <li><a href="galeria.html">Admision</a></li>
-                <li class="expandable_li">
-                    <input type="checkbox" id="galeria_checkbox">
-                    <label for="galeria_checkbox" style="font-size: 0.9rem;">Galeria <i class="uil uil-angle-down"></i></label>
-                    <ul class="dropdown">
-                        <li><a href=""><i class="uil uil-rotate-360"></i>Tour virtual</a></li>
-                        <li><a href=""><i class="uil uil-user-nurse"></i>Uniformes</a></li>
-                        <li><a href=""><i class="uil uil-award"></i>Premios</a></li>
-                        <li><a href=""><i class="uil uil-instagram"></i>Instagram</a></li>
-                    </ul>
-                </li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="../mdn/imagenes/logo_nazaret2.png" alt="" class="logo">
+            </a>
+            <ul>
+                <li><a class="active" href="#">Inicio</a></li>
+                <li><a href="#">Sobre Nosotres</a></li>
+                <li><a href="#">Admisión</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Misceláneas</a></li>
+                <li><a href="#">Gestión</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
-            
-            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-            <button id="close-menu-btn"><i class="uil uil-multiply"></i></i></button>
-        </div>
+            </div>
     </nav>
 
     <header>
