@@ -27,25 +27,18 @@
 <body>
     <nav>
         <div class="container nav_container">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <span class="line1__bars-menu"></span>
-                <span class="line2__bars-menu"></span>
-                <span class="line3__bars-menu"></span>
-            </label>
-            <a href="index.html" class="enlace">
-                <img src="./imagenes/logo_nazaret2.png" alt="" class="logo">
-            </a>
-            <ul>
-                <li><a class="active" href="index.html">Inicio</a></li>
-                <li><a href="#">Sobre Nosotres</a></li>
-                <li><a href="admision.html">Admisión</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="#">Misceláneas</a></li>
-                <li><a href="#">Gestión</a></li>
+            <a href="index.html"><img src="./imagenes/logo_nazaret2.png" alt=""></a>
+            <ul class="nav_menu">
+                <li><a href="admision.html">Sobre Nosotres</a></li>
+                <li><a href="admision.html">Admision</a></li>
+                <li><a href="contacto.html">Galeria</a></li>
+               
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
-            </div>
+            
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></i></button>
+        </div>
     </nav>
 
     <header>
@@ -235,78 +228,77 @@
  
 
     <footer class="footer">
-        <div class="container footer_container">
-            <div class="footer_1">
-                <a href="index.html" class="footer_logo">
-                    <h4>M D N</h4>
-                </a>
-                <p>
-                    Entonces dime <br>
-                    Que es lo mejor te ha pasado? <br>
-                    <input type="text" name="respuesta" placeholder="Introdusca su respuesta" style="background-color: transparent;color: rgb(255, 255, 255);">
-                </p>
-                
-            </div>
-
-            <div class="footer_2">
-                <h4>link</h4>
-                <ul class="permalinks">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Gestion pedagogica</a></li>
-                    <li><a href="#">Intranet</a></li>
-                    <li><a href="#">Repositorio academico</a></li>
-                    <li><a href="#">Biblioteca virtual</a></li>
-                    <li><a href="#">Miselanea</a></li>
-                    <li><a href="#">Precios</a></li>
-                </ul>
-            </div>
-
-            <div class="footer_3">
-                <h4>Institucional</h4>
-                <ul class="permalinks">
-                    <li><a href="">Ugel</a></li>
-                    <li><a href="#">Comicon</a></li>
-                    <li><a href="#">Regla</a></li>
-                    <li><a href="#">Pcie</a></li>
-                    <li><a href="#">Pej</a></li>
-                </ul>
-            </div>
-
-            <div class="footer_4">
-                <h4>Contacto</h4>
-                <div>
-                    <i class="uil uil-phone-alt" style="zoom: 1.5;"></i><p>(076) 363545</p>
-                    <br>
-                    <i class="uil uil-envelope" style="zoom: 1.5;"></i><p>nazaret@mail.com</p>
-                    <br>
-                    <i class="uil uil-location-pin-alt" style="zoom: 1.5;"></i><p>Av. Hoyos Rubio 1050 <br> Urb. Horacio Zeballos Gamez</p>
-                </div>
-                    
-                <ul class="footer_social">
-                    <li>
-                        <a href="https://www.facebook.com/mariadenazaretcajamarca"><i class="uil uil-facebook-f"></i></a>
-                    </li>
-
-                    <li>
-                        <a href="#"><i class="uil uil-instagram"></i></a>
-                    </li>
-
-                    <li>
-                        <a href="#"><i class="uil uil-youtube"></i></i></a>
-                    </li>
-
-                    <li>
-                        <a href="#"><i class="uil uil-twitter"></i></i></a>
-                    </li>
-
-                    <li>
-                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                    </li>
-                </ul>
-            </div>
+    <div class="container footer_container">
+        <div class="footer_1">
+            <a href="index.html" class="footer_logo">
+                <h4>Maria de Nazaret</h4>
+            </a>
+            <p>
+                Entonces dime <br>
+                Que es lo mejor te ha pasado? <br>
+                <input type="text" name="respuesta" placeholder="" style="background-color: transparent;color: rgb(255, 255, 255);">
+            </p>
+            
         </div>
-    </footer>
 
+        <div class="footer_2">
+            <h4>Accesos Internos</h4>
+            <ul class="permalinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="admision.html">Gestion pedagogica</a></li>
+                <li><a href="precios.html">Repositorio academico</a></li>
+                <li><a href="galeria.html">Biblioteca virtual</a></li>
+                <li><a href="contacto.html">Miselanea</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="precios.html">Intranet</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_3">
+            <h4>Institucional</h4>
+            <ul class="permalinks">
+                <li><a href="index.html">Ugel</a></li>
+                
+                <li><a href="precios.html">Regla</a></li>
+                <li><a href="precios.html">Pcie</a></li>
+                <li><a href="precios.html">Pej</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_4">
+            <h4>Contacto</h4>
+            <div>
+                <i class="uil uil-phone-alt" style="zoom: 1.5;"></i><p>(076) 363545</p>
+                <br>
+                <i class="uil uil-envelope" style="zoom: 1.5;"></i><p>nazaret@mail.com</p>
+                <br>
+                <i class="uil uil-location-pin-alt" style="zoom: 1.5;"></i><p>Av. Hoyos Rubio 1050 <br> Urb. Horacio Zeballos Gamez</p>
+            </div>
+                
+            <ul class="footer_social">
+                <li>
+                    <a href="https://www.facebook.com/mariadenazaretcajamarca"><i class="uil uil-facebook-f"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="uil uil-instagram"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="uil uil-youtube"></i></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="uil uil-twitter"></i></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
 
 <!-----------------------------------btn flotante-->
