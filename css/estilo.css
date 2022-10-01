@@ -38,6 +38,7 @@ body{
 /*-----------------------------------------*/
 body.dark {
     background-color: rgba(116, 78, 78, 0.283);
+    color: #000;
   }
   .toggle {
     position: relative;
