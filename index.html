@@ -28,7 +28,7 @@
 <nav>
     <div class="navbar">
       <i class='bx bx-menu'></i>
-      <div class="logo"><a href="#"><img src="/imagenes/logo_nazaret2.png" alt="logo"></a></div>
+      <div class="logo"><a href="#"><img src="./imagenes/logo_nazaret2.png" alt="logo"></a></div>
       <div class="nav-links">
         <div class="sidebar-logo">
           <span class="logo-name">Maria De Nazaret</span>
@@ -383,7 +383,21 @@
     <script src="./java/js.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const heart = document.querySelector(".heart");
 
+        heart.addEventListener("click", () =>{
+        if(!heart.classList.contains("forward")){
+            heart.classList.add("forward");
+            heart.classList.remove("reverse")
+        }else{
+            heart.classList.add("reverse")
+            heart.classList.remove("forward");
+
+            }
+        })
+
+    </script>
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
