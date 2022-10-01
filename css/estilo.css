@@ -35,6 +35,47 @@ body{
     color: var(--color-white);
     background: var(--color-dark);
 }
+/*-----------------------------------------*/
+body.dark {
+    background-color: rgba(116, 78, 78, 0.283);
+  }
+  .toggle {
+    position: relative;
+    top: -20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    background-color: transparent;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 100;
+  }
+  .toggle::before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background: transparent;
+    border-radius: 50%;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+  }
+  .toggle.active::before {
+    background-color: transparent;
+    left: calc(100% - 110px - 14px);
+  }
+  
+  
+
+
+
+
+/*-----------------------------------------*/
+
+
+
 .container{
     width: var(--container-width-lg);
     margin: 0 auto;
@@ -311,18 +352,6 @@ top: auto;
   .heart.forward,.heart.forward::before,
   .heart.forward::after{
     background-color: #eb608c;
-  }
-  .circle {
-    position: relative;
-    height: 10px;
-    width: 10px;
-    left: 7px;
-    top: -28px;
-    border-radius: 50%;
-    z-index: 100;
-    transition: 0.6s;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   }
   .heart.forward .circle{
     animation: move 0.6s forwards;
