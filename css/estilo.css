@@ -394,7 +394,7 @@ top: auto;
 /*----------------------header----------------*/
 header{
     position: relative;
-    top: 1rem;
+    top: 5rem;
     overflow: hidden;
     height: 70vh;
     margin-bottom: 5rem;
@@ -423,6 +423,7 @@ header{
 .categories{
     height: 29rem;
     background: var(--color-bg1);
+    color: var(--color-white);
 
 }
 .categories h1{
@@ -512,11 +513,12 @@ header{
 
 
 
-/*------------------*/
+/*-------------preguntas---------------------*/
 
 .faqs{
     background-color: var(--color-bg1);
     box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+    color: var(--color-white);
 
 }
 .faqs_container{
@@ -553,7 +555,7 @@ header{
 
 
 
-/*--------------------*/
+/*----------testimonios------------*/
 .testimonial_container{
     overflow-x: hidden;
     position: relative;
@@ -595,11 +597,12 @@ header{
     top: -1.5rem;
     transform: rotate(45deg);
 }
-/*------------------------------*/
+/*------------pie------------------*/
 footer{
     background: var(--color-bg1);
     padding-top: 5rem;
     font-size: 0.9rem;
+    color: var(--color-white);
 }
 .footer_container{
     display: grid;
@@ -759,12 +762,13 @@ iframe{
 
     /*============*/
     header {
-        /*height: 52vh;*/
+        /*height: 120vh;*/
         height: auto;
+        
         margin-bottom: 4rem;
     }
     .header_container{
-        gap: 0;
+        gap: 4;
         padding-bottom: 3rem;
     }
 
@@ -823,7 +827,7 @@ iframe{
     /*============*/
 
     header{
-        height: 100vh;
+        height: 100%;
     }
     .header_container{
         grid-template-columns: 1fr;
@@ -838,6 +842,7 @@ iframe{
     /*============*/
 
     .categories_right{
+        
         grid-template-columns: 1fr 1fr;
         gap: 0.7rem;
     }
