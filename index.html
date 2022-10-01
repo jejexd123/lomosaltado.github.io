@@ -4,42 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="icon/png" href="favicon.png">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 <!--testimonial-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 <!---->
     <link rel="stylesheet" href="css/whats.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="icon" type="icon/png" href="favicon.png">
+    <link rel="shorcut icon" href="favicon.png">
 
-     <link rel="stylesheet" href="css/whats2.css">
+    <link rel="stylesheet" href="css/whats2.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
      
 
     <title>I.E.P Maria De Nazaret</title>
 </head>
 <body>
-    <nav>
-        <div class="container nav_container">
-            <a href="index.html"><img src="./imagenes/logo_nazaret2.png" alt=""></a>
-            <ul class="nav_menu">
-                <li><a href="admision.html">Sobre Nosotros</a></li>
-                <li><a href="admision.html">Admision</a></li>
-                <li><a href="contacto.html">Galeria</a></li>
-               
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            
-            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-            <button id="close-menu-btn"><i class="uil uil-multiply"></i></i></button>
+<!----------------------------------------------navbar-------------------->
+<nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#"><img src="/imagenes/logo_nazaret2.png" alt="logo"></a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Maria De Nazaret</span>
+          <i class='bx bx-x' ></i>
         </div>
-    </nav>
+        <ul class="links">
+          <li><a href="#">Inicio</a></li>
+          <li>
+            <a href="#">Sobre Nosotras</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="#">Mision</a></li>
+              <li><a href="#">Vision</a></li>
+              
+              <li class="more">
+                <span><a href="#"></a>
+                <i class='bx bxs-chevron-right arrow more-arrow' style="display: none;"></i>
+              </span>
+                
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Galeria</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#">Premios</a></li>
+              <li><a href="#">Ex-alumnas</a></li>
+              <li><a href="#">Instagram</a></li>
+              
+            </ul>
+          </li>
+          <li><a href="#">Admision</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#"><i class="uil uil-user" style="zoom: 1.2;"></i></a></li>
+        </ul>
+      </div>
+      
+      <div class="search-box" style="display: none;">
+        <i class='bx bx-search'></i>
+      </div>
+      
+      <div class="heart">
+            <span class="circle"></span>
+      </div>
+    </div>
+  </nav>
+
+
+
+<!-------------------------------------------------------------------------------->
 
     <header>
         <div class="container header_container">
