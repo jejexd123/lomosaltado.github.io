@@ -581,6 +581,7 @@ header{
     text-align: center;
 }
 .testimonial_body{
+    color: var(--color-white);
     background: var(--color-primary);
     padding: 2rem;
     margin-top: 3rem;
