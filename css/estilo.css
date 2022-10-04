@@ -679,7 +679,7 @@ iframe{
         display: block;
         max-width: 270px;
         width: 100%;
-        background:  #3E8DA8;
+        background:  var(--color-bg);
         line-height: 40px;
         padding: 20px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
