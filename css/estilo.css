@@ -484,13 +484,14 @@ header{
 .courses{
     margin-top: 3rem;
     text-align: center;
-color: #fff;
 }
 .courses_container{
     margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    color: var(--color-white);
+    border-radius: 1rem;
 }
 
 .course{
@@ -500,8 +501,9 @@ color: #fff;
     transition: var(--transition);
 }
 .course:hover{
-    background: transparent;
+    /*background: transparent;*/
     border-color: var(--color-primary);
+
 }
 .course_info{
     padding: 2rem;
