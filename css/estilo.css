@@ -503,6 +503,7 @@ header{
     /*background: transparent;*/
     border-color: var(--color-primary);
     transform: scale(1.04);
+    border-radius: 30px;
 
 }
 .course_info{
