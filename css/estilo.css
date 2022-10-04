@@ -479,7 +479,7 @@ header{
     font-size: 0.85rem;
 }
 
-
+/*--------------------festividades----------------------*/
 
 .courses{
     margin-top: 3rem;
@@ -491,7 +491,6 @@ header{
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     color: var(--color-white);
-    border-radius: 1rem;
 }
 
 .course{
@@ -503,6 +502,7 @@ header{
 .course:hover{
     /*background: transparent;*/
     border-color: var(--color-primary);
+    transform: scale(1.2);
 
 }
 .course_info{
