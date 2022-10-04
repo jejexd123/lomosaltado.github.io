@@ -502,7 +502,7 @@ header{
 .course:hover{
     /*background: transparent;*/
     border-color: var(--color-primary);
-    transform: scale(1.07);
+    transform: scale(1.04);
 
 }
 .course_info{
