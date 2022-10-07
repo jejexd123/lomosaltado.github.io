@@ -1,28 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="galeria.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="shorcut icon" href="../favicon.png">
+    <title>Galeria</title>
 </head>
-    <nav style="height: 4rem; background:red ">
-    <ul style="    height: 100%;
-    max-width: 1250px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    /* background: red; */
-    padding: 0 50px;">
-        <li><a href="../index.html">inicio</a></li>
-    </ul>
-</nav>
-<body>
+<!----------------------------------------------navbar-------------------->
+<nav>
+  <div class="navbar">
+    <i class='bx bx-menu'></i>
+    <div class="logo"><a href="index.html"><img src="../imagenes/logo_nazaret2.png" alt="logo"></a></div>
+    <div class="nav-links">
+      <div class="sidebar-logo">
+        <span class="logo-name">Maria De Nazaret</span>
+        <i class='bx bx-x' ></i>
+      </div>
+      <ul class="links">
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+          <a href="#">Sobre Nosotras</a>
+          <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+          <ul class="htmlCss-sub-menu sub-menu">
+            <li><a href="#">Mision</a></li>
+            <li><a href="#">Vision</a></li>
+            
+            <li class="more">
+              <span><a href="#"></a>
+              <i class='bx bxs-chevron-right arrow more-arrow' style="display: none;"></i>
+            </span>
+              
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="./galeria/galeria.html">Galeria</a>
+          <i class='bx bxs-chevron-down js-arrow arrow '></i>
+          <ul class="js-sub-menu sub-menu">
+            <li><a href="#">Premios</a></li>
+            <li><a href="#">Ex-alumnas</a></li>
+            <li><a href="#">Instagram</a></li>
+            
+          </ul>
+        </li>
+        <li><a href="#">Admision</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="#"><i class="uil uil-user" style="zoom: 1.2;"></i></a></li>
+      </ul>
+    </div>
     
-    <section>
+    <div class="search-box" style="display: none;">
+      <i class='bx bx-search'></i>
+    </div>
+    
+    <div class="heart">
+      <div class="toggle"></div>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<!-------------------------------------------------------------------------------->
+<body style="background-color: white;">
+    <section class="main swiper mySwiper" style="margin-top: 5rem;">
+        <div class="wrapper swiper-wrapper" style="height: 70vh;">
+          <div class="slide swiper-slide">
+            <img src="images/img.jpg" alt="" class="image" />
+            <div class="image-data">
+              <!-- <span class="text">Enjoy the finest coffee drinks.</span> -->
+              <h2>
+                Maria De<br />
+                Nazaret
+              </h2>
+             <!-- <a href="#" class="button">About Us</a>-->
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/img.jpg" alt="" class="image" />
+            <div class="image-data">
+              <!-- <span class="text">We really like what we do.</span> -->
+              <h2>
+                Maria De<br />
+                Nazaret
+              </h2>
+             <!-- <a href="#" class="button">About Us</a>-->
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/img.jpg" alt="" class="image" />
+            <div class="image-data">
+              <!-- <span class="text">Making Our coffee with lover.</span> -->
+              <h2>
+                Maria De<br />
+                Nazaret
+              </h2>
+              <!-- <a href="#" class="button">ig</a> -->
+            </div>
+          </div>
+        </div>
+    
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+  
+
+
+
+
+    <section style="color: #000;"">
         <ul>
             <li class="list active" data-filter="all">Todo</li>
             <li class="list" data-filter="festividades">Festividades</li>
@@ -64,6 +161,85 @@
 
         </div>
     </section>
+    <section style="color: #000; margin-top: -4rem;"><center><H2><i class="uil uil-instagram" style="color: black; font-size: 1.7rem;"></i>&nbsp;INSTAGRAM</H2></center>
+    <p>aquivaelig</p></section>
+
+<!-------------------------footer---------------------->
+ 
+
+    <footer class="footer">
+    <div class="container footer_container">
+        <div class="footer_1">
+            <a href="index.html" class="footer_logo">
+                <h4>Maria de Nazaret</h4>
+            </a>
+            <p>
+                Entonces dime <br>
+                Que es lo mejor te ha pasado? <br>
+                <input type="text" name="respuesta" placeholder="" style="background-color: transparent;color: rgb(255, 255, 255);">
+            </p>
+            
+        </div>
+
+        <div class="footer_2">
+            <h4>Accesos Internos</h4>
+            <ul class="permalinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="admision.html">Gestión pedagógica</a></li>
+                <li><a href="precios.html">Repositorio academico</a></li>
+                <li><a href="galeria.html">Biblioteca virtual</a></li>
+                <li><a href="contacto.html">Miselanea</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="precios.html">Intranet</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_3">
+            <h4>Institucional</h4>
+            <ul class="permalinks">
+                <li><a href="index.html">UGEL</a></li>
+                
+                <li><a href="precios.html">REGLA</a></li>
+                <li><a href="precios.html">PCIE</a></li>
+                <li><a href="precios.html">PEJ</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_4">
+            <h4>Contacto</h4>
+            <div>
+                <i class="uil uil-phone-alt" style="zoom: 1.5;"></i><p>(076) 363545</p>
+                <br>
+                <i class="uil uil-envelope" style="zoom: 1.5;"></i><p>nazaret@mail.com</p>
+                <br>
+                <i class="uil uil-location-pin-alt" style="zoom: 1.5;"></i><p>Av. Hoyos Rubio 1050 <br> Urb. Horacio Zeballos</p>
+            </div>
+                
+            <ul class="footer_social">
+                <li>
+                    <a href="https://www.facebook.com/mariadenazaretcajamarca"><i class="uil uil-facebook-f"></i></a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/"><i class="uil uil-instagram"></i></a>
+                </li>
+
+                <li>
+                    <a href="https://youtube.com/channel/UCLUIynDJbZCsjyiAWhYfgkw"><i class="uil uil-youtube"></i></i></a>
+                </li>
+
+                <li>
+                    <a href="https://twitter.com/"><i class="uil uil-twitter"></i></i></a>
+                </li>
+
+                <li>
+                    <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
     <script>
         let list = document.querySelectorAll('.list');
         let itemBox = document.querySelectorAll('.itemBox');
@@ -91,10 +267,27 @@
             })
         }
     </script>
-    <script 
-    src="https://cdn2.woxo.tech/a.js#633e5b593cf5e7f931616554" 
-    async data-usrc>
-  </script>
+
+        <!-- Swiper JS -->
+    <script src="JS/swiper-bundle.min.js"></script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="../java/js.js"></script>
 </body>
 </html>
 
