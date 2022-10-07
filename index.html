@@ -84,12 +84,12 @@
 
     <header>
         <div class="container header_container">
-            <div class="header_left">
+            <div class="header_left" data-aos="fade-right" data-aos-duration="2000">
                 <p style="font-size: 1.7rem; font-weight: 500; margin-top: -10px;">¿Qué es lo mejor que te ha pasado?......</p>
                 <a href="https://my.matterport.com/show/?m=ScRWFAbhSPy" class="btn btn-primary">Nuestro cole</a>
             </div>
 
-            <div class="header_right">
+            <div class="header_right" data-aos="fade-left" data-aos-duration="3000">
                 <div class="header_right-image">
                     <img src="./imagenes/nina.svg" alt="header">
                 </div>
@@ -111,7 +111,8 @@
                 <a href="#" class="btn">Gestión pedagogica</a>
             </div>
         
-            <div class="categories_right">
+            <div class="categories_right" data-aos="fade-up"
+            data-aos-duration="2000">
 
                 <article class="category primaria">
                     <span class="category_icon"><i class="uil uil-kid"></i></i></span>
@@ -442,5 +443,13 @@
 
     <!--Animación Menu Hamburguesa-->
     <script src="java/script.js"></script>
+
+    <!-------illumination---------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+
 </body>
 </html>
