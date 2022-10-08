@@ -645,12 +645,24 @@ iframe{
     margin-left: 3rem;
     margin-top: 1rem;
 }
+/* llll */
+.subimg{
+    width: 100px;
+    height: 100px;
+    visibility: hidden;
+    display: none;
+}
 
 
 
 /*----------------RESPONSIVE --------------------*/
 
 @media screen and (max-width: 1024px) {
+    .subimg{
+       visibility: visible;
+       display: contents;
+    }
+    
     .container {
         width: var(--container-width-md);
     }
