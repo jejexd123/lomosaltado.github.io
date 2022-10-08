@@ -647,20 +647,23 @@ iframe{
 }
 /* llll */
 .subimg{
-    width: 100px;
-    height: 100px;
+    width: 100%;
+
     visibility: hidden;
     display: none;
 }
-
 
 
 /*----------------RESPONSIVE --------------------*/
 
 @media screen and (max-width: 1024px) {
     .subimg{
-       visibility: visible;
-       display: contents;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+ 
+        visibility: visible;
+        display: block;
     }
     
     .container {
@@ -840,6 +843,9 @@ iframe{
     nav .navbar .nav-links{
         max-width: 100%;
     } 
+    .subimg{
+        width: 50%;
+    }
 
     /*============*/
 
