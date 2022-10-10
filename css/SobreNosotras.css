@@ -111,6 +111,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
+    color: #fff;
 }
 
 h3 {
@@ -519,6 +520,7 @@ header {
 .fundadora_left p {
     margin: 1rem 0 2.4rem;
     text-align: justify;
+    color: #fff;
 }
 
 .fundadora_right-image {
