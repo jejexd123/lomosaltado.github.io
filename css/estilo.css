@@ -473,6 +473,19 @@ header {
 .header_left p {
     margin: 1rem 0 2.4rem;
 }
+.header_right{
+    width: 100%;
+
+
+    
+}
+.header_right-image{
+
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 
 .icon_user {
     padding: 0.7rem;
