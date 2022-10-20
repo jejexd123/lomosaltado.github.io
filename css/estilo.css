@@ -37,8 +37,8 @@ body{
 }
 /*-----------------------------------------*/
 body.dark {
-    background-color: var(--color-light);
-    color: #000;
+    background-color: var(--colot-light);
+    color: var(--color-dark);
   }
   .toggle {
     position: relative;
@@ -204,7 +204,7 @@ nav{
     top: 70px;
     left: 0;
     line-height: 40px;
-    background: var(--color-bg1);
+    background: linear-gradient(var(--color-dark) 50%,var(--color-bg1));
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 4px 4px;
     display: none;
@@ -690,6 +690,8 @@ iframe{
     }
 
     /*============*/
+   
+
     
     .navbar .bx-menu{
         display: block;
@@ -851,6 +853,18 @@ iframe{
     
     /*============*/
     
+    /*  */
+
+    nav{
+        visibility: hidden;
+    }
+    .heart{
+        visibility: visible;
+        position: block;
+    }
+
+    /*  */
+
     nav .navbar .nav-links{
         max-width: 100%;
     } 
