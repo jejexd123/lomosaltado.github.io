@@ -76,7 +76,7 @@
 
 <!-------------------------------------------------------------------------------->
 
-<body style="background-color: #000;">
+<body>
   <section class="main swiper mySwiper" style="margin-top: 5rem;">
     <div class="wrapper swiper-wrapper" style="height: 70vh;">
       <div class="slide swiper-slide">
@@ -165,8 +165,8 @@
 
     </div>
   </section>
-  <section style="width: 90%; margin-left:auto; margin-right: auto;">
-    <h1 style="color: var(--color-white); font-size: 2rem;"><i class="uil uil-instagram"></i>Instagram</h1>
+  <section style="width: 90%; margin-left:auto; margin-right: auto; margin-top: -4rem;">
+    <h2><i class="uil uil-instagram"></i>Instagram</h2>
     <br>
     <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
   </section>
@@ -250,58 +250,101 @@
     </div>
   </footer>
 
-  <script>
-    let list = document.querySelectorAll('.list');
-    let itemBox = document.querySelectorAll('.itemBox');
-
-    for (let i = 0; i < list.length; i++) {
-      list[i].addEventListener('click', function () {
-        for (let j = 0; j < list.length; j++) {
-          list[j].classList.remove('active');
-        }
-        this.classList.add('active');
-
-        let dataFilter = this.getAttribute('data-filter');
-        for (let k = 0; k < itemBox.length; k++) {
-          itemBox[k].classList.remove('active');
-          itemBox[k].classList.add('hide');
-
-          if (itemBox[k].getAttribute('data-item') == dataFilter ||
-            dataFilter == "all") {
-
-            itemBox[k].classList.remove('hide');
-            itemBox[k].classList.add('active');
-
-          }
-        }
-      })
-    }
-  </script>
-
-  <!-- Swiper JS -->
-  <script src="JS/swiper-bundle.min.js"></script>
-
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-  <script src="../java/js.js"></script>
-
-
-
+  
+  
+  
 </body>
+<!-- dark/light -->
+<script>
+  const heart = document.querySelector(".heart");
+
+  heart.addEventListener("click", () => {
+      if (!heart.classList.contains("forward")) {
+          heart.classList.add("forward");
+          heart.classList.remove("reverse")
+      } else {
+          heart.classList.add("reverse")
+          heart.classList.remove("forward");
+
+      }
+  })
+
+
+</script>
+
+
+<script>
+  const body = document.querySelector("body"),
+      toggle = document.querySelector(".toggle");
+
+  let getMode = localStorage.getItem("mode");
+  if (getMode && getMode === "dark") {
+      body.classList.add("dark");
+      toggle.classList.add("active");
+  }
+
+  toggle.addEventListener("click", () => {
+      body.classList.toggle("dark");
+
+      if (!body.classList.contains("dark")) {
+          return localStorage.setItem("mode", "light");
+      }
+      localStorage.setItem("mode", "dark");
+  });
+
+  toggle.addEventListener("click", () => toggle.classList.toggle("active"));
+</script>
+
+<!-- end -->
+
+<script>
+  let list = document.querySelectorAll('.list');
+  let itemBox = document.querySelectorAll('.itemBox');
+
+  for (let i = 0; i < list.length; i++) {
+    list[i].addEventListener('click', function () {
+      for (let j = 0; j < list.length; j++) {
+        list[j].classList.remove('active');
+      }
+      this.classList.add('active');
+
+      let dataFilter = this.getAttribute('data-filter');
+      for (let k = 0; k < itemBox.length; k++) {
+        itemBox[k].classList.remove('active');
+        itemBox[k].classList.add('hide');
+
+        if (itemBox[k].getAttribute('data-item') == dataFilter ||
+          dataFilter == "all") {
+
+          itemBox[k].classList.remove('hide');
+          itemBox[k].classList.add('active');
+
+        }
+      }
+    })
+  }
+</script>
+
+<!-- Swiper JS -->
+<script src="JS/swiper-bundle.min.js"></script>
+
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+<script src="../java/js.js"></script>
 
 <script type="text/javascript">
   /* curator-feed-default-feed-layout */
