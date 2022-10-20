@@ -56,6 +56,58 @@ section ul li.active{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
 
+.body_center{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbarend{
+    height: 3rem;
+    margin: 20px;
+    border-radius: 5rem;
+}
+.navbarend ul{
+    display: inline-block;
+    text-align: end;
 
+ }
+
+ .navbarend ul li{
+     float: left;
+     line-height: 2.5rem;
+     
+ }
+
+.navbarend ul li a {
+     color: white;
+     font-weight: bold;
+     text-decoration: none;
+     font-size: 20px;
+     padding: 40px;
+ }
+
+i{
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px){
+    .body_center{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 600px){
+    .body_center{
+        width: 97%;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .navbarend{
+        visibility: hidden;
+    }
+    br{
+        display: none;
+    }
 }

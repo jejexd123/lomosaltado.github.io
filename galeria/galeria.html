@@ -18,6 +18,8 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
     <title>I.E.P Maria De Nazaret</title>
@@ -81,70 +83,72 @@
 <!-------------------------------------------------------------------------------->
 
 <body>
-  <section class="main swiper mySwiper" style="margin-top: 5rem;">
-    <div class="wrapper swiper-wrapper" style="height: 70vh;">
-      <div class="slide swiper-slide">
-        <img src="images/img.jpg" alt="" class="image" />
-        <div class="image-data">
-          <!-- <span class="text">Enjoy the finest coffee drinks.</span> -->
-          <h2>
-            Maria De<br />
-            Nazaret
-          </h2>
-          <!-- <a href="#" class="button">About Us</a>-->
+  <div class="body_center">
+    <section class="main swiper mySwiper" style="margin-top: 5rem;">
+      <div class="wrapper swiper-wrapper" style="height: 70vh;">
+        <div class="slide swiper-slide">
+          <img src="images/img.jpg" alt="" class="image" />
+          <div class="image-data">
+            <!-- <span class="text">Enjoy the finest coffee drinks.</span> -->
+            <h2>
+              Maria De<br />
+              Nazaret
+            </h2>
+            <!-- <a href="#" class="button">About Us</a>-->
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/img.jpg" alt="" class="image" />
+          <div class="image-data">
+            <!-- <span class="text">We really like what we do.</span> -->
+            <h2>
+              Maria De<br />
+              Nazaret
+            </h2>
+            <!-- <a href="#" class="button">About Us</a>-->
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/img.jpg" alt="" class="image" />
+          <div class="image-data">
+            <!-- <span class="text">Making Our coffee with lover.</span> -->
+            <h2>
+              Maria De<br />
+              Nazaret
+            </h2>
+            <!-- <a href="#" class="button">ig</a> -->
+          </div>
         </div>
       </div>
-      <div class="slide swiper-slide">
-        <img src="images/img.jpg" alt="" class="image" />
-        <div class="image-data">
-          <!-- <span class="text">We really like what we do.</span> -->
-          <h2>
-            Maria De<br />
-            Nazaret
-          </h2>
-          <!-- <a href="#" class="button">About Us</a>-->
-        </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+
+
+
+
+    <section style="color: #000;">
+      <ul>
+        <li class=" list active" data-filter="all">Todo</li>
+        <li class="list" data-filter="festividades">Festividades</li>
+        <li class="list" data-filter="primaria">Primaria</li>
+        <li class="list" data-filter="secundaria">Secundaria</li>
+        <li class="list" data-filter="promociones">Promociones</li>
+        <li class="list" data-filter="premios">Premios</li>
+      </ul>
+      <div class="product">
+
       </div>
-      <div class="slide swiper-slide">
-        <img src="images/img.jpg" alt="" class="image" />
-        <div class="image-data">
-          <!-- <span class="text">Making Our coffee with lover.</span> -->
-          <h2>
-            Maria De<br />
-            Nazaret
-          </h2>
-          <!-- <a href="#" class="button">ig</a> -->
-        </div>
-      </div>
-    </div>
-
-    <div class="swiper-button-next nav-btn"></div>
-    <div class="swiper-button-prev nav-btn"></div>
-    <div class="swiper-pagination"></div>
-  </section>
-
-
-
-
-
-  <section style="color: #000;">
-    <ul>
-      <li class=" list active" data-filter="all">Todo</li>
-      <li class="list" data-filter="festividades">Festividades</li>
-      <li class="list" data-filter="primaria">Primaria</li>
-      <li class="list" data-filter="secundaria">Secundaria</li>
-      <li class="list" data-filter="promociones">Promociones</li>
-      <li class="list" data-filter="premios">Premios</li>
-    </ul>
-    <div class="product">
-
-    </div>
-  </section>
-  <section style="width: 90%; margin-left:auto; margin-right: auto; margin-top: -4rem;">
-    <h2><i class="uil uil-instagram"></i>Instagram</h2>
-    <br>
-    <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
-  </section>
+    </section>
+    <section style="width: 90%; margin-left:auto; margin-right: auto; margin-top: -4rem;">
+      <h2><i class="uil uil-instagram"></i>Instagram</h2>
+      <br>
+      <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+    </section>
+  </div>
   <!-------------------------footer---------------------->
 
 
@@ -210,7 +214,7 @@
           </li>
 
           <li>
-            <a href="https://youtube.com/channel/UCLUIynDJbZCsjyiAWhYfgkw"><i class="uil uil-youtube"></i></i></a>
+            <a href="https://youtube.com/channel/UCLUIynDJbZCsjyiAWhYfgkw"><i class="uil uil-youtube"></i></a>
           </li>
 
           <li>
@@ -223,10 +227,23 @@
         </ul>
       </div>
     </div>
+    <br><br><br>
   </footer>
 
   
-  
+ <div>
+  <div class="navbarend fixed-bottom navbar-expand-lg navbar-light" style="background: var(--color-dark);"">
+    <ul class="navbend">
+    
+      <li><a style="color: #fff;" href="#">MDN</a></li>
+      <li><a href=""><i class="uil uil-info-circle"></i></a></li>
+      <li><a href=""><i class="uil uil-scenery"></i></a></li>
+      <li><a href=""><i class="uil uil-comment-medical"></i></a></li>
+    </ul>
+
+
+  </div>
+ </div>
   
 </body>
 <!-- dark/light -->
@@ -329,4 +346,14 @@
   e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
   })();
   </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
 </html>
