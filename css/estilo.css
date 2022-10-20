@@ -852,18 +852,7 @@ iframe{
     }
     
     /*============*/
-    
-    /*  */
 
-    nav{
-        visibility: hidden;
-    }
-    .heart{
-        visibility: visible;
-        position: block;
-    }
-
-    /*  */
 
     nav .navbar .nav-links{
         max-width: 100%;
