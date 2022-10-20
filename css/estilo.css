@@ -37,7 +37,7 @@ body{
 }
 /*-----------------------------------------*/
 body.dark {
-    background-color: rgba(116, 78, 78, 0.283);
+    background-color: var(--color-light);
     color: #000;
   }
   .toggle {
@@ -803,6 +803,7 @@ iframe{
 
     .categories{
         height: auto;
+        text-align: center;
     }
     .categories_container{
         grid-template-columns: 2fr;
