@@ -102,8 +102,8 @@ i{
     .body_center{
         width: 97%;
     }
-    footer{
-        visibility: hidden;
+    .footer{
+        display: none;
 
      }
 }
