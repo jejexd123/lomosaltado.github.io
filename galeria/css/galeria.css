@@ -63,11 +63,13 @@ section ul li.active{
     margin-left: auto;
     margin-right: auto;
 }
+/*
 .navbarend{
     height: 3rem;
     margin: 20px;
     border-radius: 5rem;
 }
+*/
 .navbarend ul{
     display: inline-block;
 
