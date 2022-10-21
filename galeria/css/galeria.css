@@ -63,13 +63,7 @@ section ul li.active{
     margin-left: auto;
     margin-right: auto;
 }
-/*
-.navbarend{
-    height: 3rem;
-    margin: 20px;
-    border-radius: 5rem;
-}
-*/
+
 @media screen and (max-width: 1024px){
     .body_center{
         width: 95%;
