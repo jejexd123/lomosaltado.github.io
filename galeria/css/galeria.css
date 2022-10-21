@@ -70,29 +70,6 @@ section ul li.active{
     border-radius: 5rem;
 }
 */
-.navbarend ul{
-    display: inline-block;
-
- }
-
- .navbarend ul li{
-     float: left;
-     line-height: 2.5rem;
-     
- }
-
-.navbarend ul li a {
-     color: white;
-     font-weight: bold;
-     text-decoration: none;
-     font-size: 20px;
-     margin: auto 1.15rem;
- }
-
-i{
-    color: #fff;
-}
-
 @media screen and (max-width: 1024px){
     .body_center{
         width: 95%;
@@ -106,13 +83,4 @@ i{
         display: none;
 
      }
-}
-
-@media screen and (min-width: 600px){
-    .navbarend{
-        visibility: hidden;
-    }
-    br{
-        display: none;
-    }
 }
