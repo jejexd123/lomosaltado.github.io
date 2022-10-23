@@ -27,6 +27,7 @@
 .contact{
     padding: 40px;
     background: var(--color-white);
+    border-radius: 10px;
 }
 
 .box{
