@@ -88,18 +88,18 @@
 <!-----------------contacto-------------->
             <div class="contact form">
                 <h3>Envíanos un mensaje</h3>
-                <form>
+                <form action="https://formsubmit.co/315fc6753ef3e14b81254f1348cb5b9d" method="POST">
                     <div class="formbox">
                         <div class="row50">
 <!------------------------------------------------------>
                             <div class="inputbox">
                                 <span>Nombre</span>
-                                <input type="text" placeholder="María">
+                                <input type="text" name="Nombre" placeholder="María">
                             </div>
 
                             <div class="inputbox">
                                 <span>Apellidos</span>
-                                <input type="text" placeholder="Nazaret">
+                                <input type="text" name="Apellidos" placeholder="Nazaret">
                             </div>
 
                         </div>
@@ -108,12 +108,12 @@
 
                             <div class="inputbox">
                                 <span>Email</span>
-                                <input type="mail" placeholder="mariadenazaret@mail.com">
+                                <input type="email" name="email" placeholder="mariadenazaret@mail.com">
                             </div>
 
                             <div class="inputbox">
                                 <span>Teléfono/celular</span>
-                                <input type="text" placeholder="+51 123 456 789">
+                                <input type="text" name="Numero" placeholder="+51 123 456 789">
                             </div>
                         </div>
 <!------------------------------------------------------>
@@ -126,10 +126,12 @@
 <!------------------------------------------------------>
                         <div class="100">
                             <div class="inputbox">
-                                <input type="submit" value="Enviar">
+                                <input name="Mensaje" type="submit" value="Enviar">
                             </div>
                         </div>
                     </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://lomo-saltado.github.io/mdn/galeria/galeria.html">
                 </form>
             </div>
 <!-----------------contacto-------------->
