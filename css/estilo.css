@@ -155,6 +155,10 @@ nav{
     /* background: red; */
     padding: 0 50px;
   }
+ .logo:hover{
+    content: url(/imagenes/logohover.png);
+    cursor: pointer;
+ }
   .navbar .logo a{
     font-size: 30px;
     color: #fff;
