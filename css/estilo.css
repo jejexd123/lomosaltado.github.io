@@ -156,7 +156,7 @@ nav{
     padding: 0 50px;
   }
  .logo:hover{
-    content: url(/imagenes/logohover.png);
+    content: url(../imagenes/logohover.png);
     cursor: pointer;
  }
   .navbar .logo a{
