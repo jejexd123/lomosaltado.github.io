@@ -134,6 +134,7 @@ h5{
     .categories_admison{
         padding: 5px;
         grid-template-columns: 1fr;
+        margin-top: 5rem;
     }
     
     .category p{
