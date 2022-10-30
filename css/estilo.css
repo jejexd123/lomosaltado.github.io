@@ -70,6 +70,11 @@ body.dark {
   }
   
   
+.separador {
+    background-color: var(--color-primary);
+    height: 5px;
+    width: 70px;
+}
 
 
 
@@ -805,6 +810,12 @@ iframe{
         gap: 4;
         padding-bottom: 3rem;
     }
+    /* ====separador=== */
+    .separador{
+        margin-left: auto;
+        margin-right: auto;
+
+    }
 
     /*============*/
 
@@ -878,12 +889,7 @@ iframe{
     .header_left p{
         margin-bottom: 1.3rem;
     }
-     /* ====separador=== */
-    .separador{
-        margin-left: auto;
-        margin-right: auto;
 
-    }
 
     /*============*/
 
