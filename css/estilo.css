@@ -434,8 +434,51 @@ header{
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-
 }
+/* comunicados/alerta */
+
+#notifi {
+    top: 107px !important;
+    transition: .5s ease-in-out all;
+}
+
+#notifi{
+    position: absolute;
+    top: 20px;
+    width: auto;
+    padding-right: 25px;
+    height: 55px;
+    background: red;
+    z-index: 2;
+    right: -12rem;
+    border-radius: 1rem 0 0 1rem;
+}
+#notifi a, .uil-exclamation-circle{
+    font-size: 1.5rem;    
+}
+#notifi a, .uil-exclamation-circle:hover{
+    right: 0;
+}
+
+
+
+#notifi li{
+    display: inline;
+    text-decoration: underline;
+    line-height: 55px;
+}
+#notifi:hover{
+    right: 0;
+}
+
+.window-loaded #notifi {
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px)
+}
+
+
+
 
 /*----------------------niveles----------------*/
 
@@ -810,12 +853,7 @@ iframe{
         gap: 4;
         padding-bottom: 3rem;
     }
-    /* ====separador=== */
-    .separador{
-        margin-left: auto;
-        margin-right: auto;
 
-    }
 
     /*============*/
 
@@ -889,7 +927,22 @@ iframe{
     .header_left p{
         margin-bottom: 1.3rem;
     }
+         /* ====separador=== */
+     .separador{
+        margin-left: auto;
+        margin-right: auto;
 
+    }
+    /* notificacion/alerta */
+    #notifi{
+        top: 17px !important;
+        font-size: 1.5rem;  
+        right: -12rem;
+
+    }
+    #notifi a,.uil-exclamation-circle{
+        font-size: 1.4rem;
+    }
 
     /*============*/
 
