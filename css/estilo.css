@@ -937,11 +937,15 @@ iframe{
     #notifi{
         top: 17px !important;
         font-size: 1.5rem;  
-        right: -12rem;
+        right: -11rem;
 
     }
-    #notifi a,.uil-exclamation-circle{
-        font-size: 1.4rem;
+    .uil-exclamation-circle{
+        font-size: 1.5rem;
+    }
+    #notifi a{
+        font-size: 1.3rem;
+        font-style: italic;
     }
 
     /*============*/
