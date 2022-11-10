@@ -123,7 +123,12 @@ h5{
 
 
 
+@media screen and (max-width: 1024px){
+    .categories_about{
+        grid-template-columns: 2fr;
+    }
 
+}
 
 
 @media screen and (max-width: 600px) {
@@ -145,6 +150,11 @@ h5{
 
     .fundadora_right-image {
         margin-top: -70px;
+    }
+    .categories_about{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        
     }
     .courses_container{
         grid-template-columns: 1fr;
