@@ -128,7 +128,7 @@ img{
     transition: var(--transition);
 }
 .btn:hover{
-    background: transparent;
+    background: var(--color-dark);
     color: var(--color-white);
     border-color: var(--color-white);
 }

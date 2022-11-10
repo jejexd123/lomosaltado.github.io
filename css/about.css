@@ -48,13 +48,45 @@ ol li:hover{
     text-decoration: underline;
     left: 10px;
 }
+/* subnav */
+.sub_nav{
+    color: var(--color-ligth);
+    padding-left: 3rem;
+}
+.sub_nav a{
+    color: var(--color-ligth);
+}
+.sub_nav a:hover{
+    text-decoration: underline;
+}
 
 
+
+
+.categories_about{
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.category{
+    background: var(--color-);
+    
+}
+
+.category p{
+    text-align: justify;
+    
+}
+h5{
+   
+    font-size: 1.4rem;
+}
 /*------------------Fundadora------------------*/
 
 .fundadora {
     position: relative;
-    top: -50px;
+    /* top: -50px; */
     overflow: hidden;
     height: 100vh;
     margin-bottom: 1rem;
