@@ -92,6 +92,7 @@ h5{
     margin-bottom: 1rem;
     padding-top: 50px;
     background-color: var(--color-bg1);
+    overflow-y: scroll;
 }
 
 .fundadora_container {
@@ -126,6 +127,25 @@ h5{
 @media screen and (max-width: 1024px){
     .categories_about{
         grid-template-columns: 2fr;
+    }
+    .fundadora {
+        width: auto;
+        height: 100vh;
+    }
+
+    .fundadora_container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        
+
+    }
+
+    .fundadora_left {
+        padding: 0.6rem;
+    }
+
+    .fundadora_right-image {
+        margin-top: -70px;
     }
 
 }
