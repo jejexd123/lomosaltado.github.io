@@ -59,6 +59,37 @@ ol li:hover{
 .sub_nav a:hover{
     text-decoration: underline;
 }
+.category a{
+    color: var(--color-ligth);
+}
+
+.category:nth-child(1){
+    background: url(../imagenes/containerderecha.jpeg);
+    background-size: 50%;
+    object-fit: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position-y: 0.1rem;
+    
+}
+.category:nth-child(2){
+    background: url(../imagenes/containerderecha.jpeg);
+    background-size: 50%;
+    object-fit: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position-y: 0.1rem;
+
+}
+.category:nth-child(3){
+    background: url(../imagenes/containerderecha.jpeg);
+    background-size: 50%;
+    object-fit: cover;
+    background-position: right;
+    background-repeat: no-repeat; 
+    background-position-y: 0.1rem;
+
+}
 
 
 
@@ -101,8 +132,10 @@ h5{
     align-items: center;
     gap: 5rem;
     height: 100%;
+    
 
 }
+
 
 
 .fundadora_left p{
@@ -148,6 +181,7 @@ h5{
         margin-top: -70px;
     }
 
+
 }
 
 
@@ -183,4 +217,36 @@ h5{
         width: 100%;
         padding: 10px;
     }
+    .category:nth-child(1){
+        
+        background-size: 50%;
+        object-fit: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        text-align: right;
+    }
+    .category:nth-child(2){
+       
+        background-size: 50%;
+        object-fit: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        text-align: left;
+    
+    }
+    .category:nth-child(3){
+       
+        background-size: 50%;
+        object-fit: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        text-align: right;
+        border-radius: 30rem 0 0 30rem;
+        background-position-y: 0.1rem;
+        border-left: 4px solid var(--color-dark);
+    }
+    .category p:nth-child(3){
+        text-align: end;
+    }
 }
+
